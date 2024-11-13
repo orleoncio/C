@@ -2,7 +2,7 @@
 
 int main()
 {
-    int numeroDeTermos;
+    //int numeroDeTermos;
     int quatro = -4;
     double termo;
     double pi = 0;

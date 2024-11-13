@@ -2,14 +2,14 @@
 
 int main()
 {
-    int numeroDeTermos;
+    int numeroDeTermos=10;
     int quatro = -4;
     double termo;
     double pi = 0;
     int x = 1;
 
-    puts("adicione o numero de termos de pi:");
-    scanf("%d", &numeroDeTermos);
+    printf("adicione o numero de termos de pi:");
+    scanf(" %d", &numeroDeTermos);
 
     for(int i = 1; i < numeroDeTermos; i++)
     {
