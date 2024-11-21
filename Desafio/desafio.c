@@ -36,7 +36,7 @@ char desocuparArmarios(unsigned char armarios)
     }
 
     puts("Qual armario voce deseja desocupar?\n");
-    scanf(" %d", &escolha);
+    scanf(" %hhu", &escolha);
 
     if(armarios < (armarios ^ 0x01 << escolha))
     {
@@ -60,17 +60,15 @@ int main()
         puts("1. Ocupar armario\n");
         puts("2. Liberar armario\n");
         puts("3. Sair\n");
-        scanf(" %d", &operacao);
+        scanf(" %hhu", &operacao);
     
         switch (operacao)
         {
             case 1:
-                puts("teste1");
                 armarios = ocuparArmario(armarios);
                 break;
 
             case 2:
-                puts("teste2");
                 armarios = desocuparArmarios(armarios);
                 break;
             
@@ -92,10 +90,7 @@ int main()
         
         puts("\n");
 
-        for(int i = 7; i >= 0; i--)
-        {
-            printf(" %d", i);
-        }
+        puts(" 7 6 5 4 3 2 1 0");        
         
         puts("\n");
 
